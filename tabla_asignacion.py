@@ -17,3 +17,5 @@ class TablaAsignacion:
     def getTablaSize(self):
         return len(self.tablaLetras)
 
+
+    #def calcularLetra(self,)
