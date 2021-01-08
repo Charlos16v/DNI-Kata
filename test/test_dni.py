@@ -1,5 +1,5 @@
-from tabla_asignacion import TablaAsignacion
-from dni import Dni
+from src.dni import Dni
+from src.tabla_asignacion import TablaAsignacion
 import pytest
 
 #casosTest = [    "78484464T","72376173A","01817200Q","95882054E","63587725Q",
