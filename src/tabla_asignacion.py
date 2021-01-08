@@ -22,7 +22,7 @@ class TablaAsignacion:
     def getLetraCorrecta(self, letra):
         return letra in self.tablaLetras
 
-
+    # Metodo encargado de calcular la letra asignada a partir del resto obtenido en la division del numero por el tamaño de la lista de letras (23).
     def calcularLetra(self, DNI):
         pos = int(DNI) % self.getTablaSize()
         return self.getLetra(pos)
