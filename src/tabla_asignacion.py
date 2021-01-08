@@ -18,4 +18,11 @@ class TablaAsignacion:
         return len(self.tablaLetras)
 
 
-    #def calcularLetra(self,)
+    # Getter encargado de obtener la letra únicamente si se encuentra en la tabla de asignación de letras.
+    def getLetraCorrecta(self, letra):
+        return letra in self.tablaLetras
+
+
+    def calcularLetra(self, DNI):
+        pos = int(DNI) % self.getTablaSize()
+        return self.getLetra(pos)
